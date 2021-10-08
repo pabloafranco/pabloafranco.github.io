@@ -72,8 +72,25 @@ header .logo {
 }
 
 header .logo img {
-	width:100px;
+	width:150;
 	vertical-align: top;
+
+	/*Aca esta la animacion*/
+	animation: rotate 3s infinite;
+	/* Como se llama mi animacion KeyFrames*/	
+	animation-name: rotate;
+	/* Cuanto demora el ciclo*/
+	animation-duration: 3s;
+	/* Como debe avanzar la animacion, es la de defecto*/
+	animation-timing-function: ease;
+	/* que no espere*/
+	animation-delay: 0s;
+	/*Que se ejecute 2 ciclos y despues termina*/
+	animation-iteration-count: 2;
+	/*Cada vez que termina un ciclo, la animación se reinicia al estado inicial y comienza desde el principio. 
+	Este es el comportamiento por defecto.*/
+	animation-direction: normal;
+	
 }
 
 
@@ -198,4 +215,48 @@ button {
 @media screen and (min-width: 1280px) {
 	.contenedor { background: black;
 				}
+}
+
+
+
+
+.logo {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+  }
+
+/**************************************************/
+/*            Tooltip                             */
+/**************************************************/
+
+  .logo  .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+  }
+  
+  .logo:hover .tooltiptext {
+	visibility: visible;
+  }
+
+/**************************************************/
+/*            Animaciones                         */
+/**************************************************/
+/*Se rota la imagen para adelante y para atras */
+@keyframes rotate {
+0%, 100% {
+transform: rotate(10deg);
+}
+50% {
+transform: rotate(-10deg);
+}
 }
