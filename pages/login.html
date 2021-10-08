@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedorSign">
+    <header>
+        <div class="logo">
+            <img src="../assets/images/movie.jpg" width=150 alt="">
+            <p>LA PRIMA AMAZONA </p>
+          </div>
+          
+
+        <nav>
+            <a href="../Index.html">Inicio</a>
+            <a href="movies.html">Peliculas</a>
+            <a href="login.html">Ingresar</a>
+            <a href="signup.html">Registro</a>
+            <a href="contact.html">Contactanos</a>
+          </nav>
+    </header>
+    <h2>Ingreso al sistema</h2>
+  
+<form action="/action_page.php" method="post">
+   
+  
+    <div class="contenedorSign">
+      <label for="uname"><b>Nombre del Uusario</b></label>
+      <input type="text" placeholder="Ingrese el usuario" name="uname" required>
+  
+      <label for="psw"><b>Clave</b></label>
+      <input type="password" placeholder="Ingrese la clave" name="psw" required>
+          
+      <button type="submit">Ingresar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordarme
+      </label>
+    </div>
+  
+    <div class="contenedorSign">
+      <button type="button" class="cancelbtn">Cancelar</button>
+      <span class="psw">¿Olvido la <a href="#">clave?</a></span>
+    </div>
+  </form>
+  <footer style="background-color:turquoise;"> Copyright 2021</footer>
+</div>
+</body>
+</html>
