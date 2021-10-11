@@ -208,12 +208,11 @@ button {
 
 	textarea{ width:250px; height:100px; }
 
-Fuente: https://www.iteramos.com/pregunta/20229/textarea-de-filas-y-cols-el-atributo-de-css
-
 	}
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
 	.contenedor { background: black;
+		flex-direction: column;
 	}
 	textarea {  width: 50em; 
 	}
