@@ -127,7 +127,7 @@ footer {
 	margin-bottom: 20px;
 	max-width:1200px;
 
-	Position: fixed;
+	Position: relative;
 	bottom: 0;
 
 
@@ -203,7 +203,12 @@ button {
     padding: 14px 10px;
 	margin: 8px 0;
 	width: 50%;
-  }
+
+	}
+
+	textarea{ width:250px; height:100px; }
+
+Fuente: https://www.iteramos.com/pregunta/20229/textarea-de-filas-y-cols-el-atributo-de-css
 
 	}
 
