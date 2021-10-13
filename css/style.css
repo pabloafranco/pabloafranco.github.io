@@ -72,6 +72,19 @@ header .logo {
 	color:#fff;
 	font-size:30px;
 }
+/*
+1. The header class has a .logo img element.
+2. The img element has a width of 150 pixels.
+3. The img element has a top vertical-align.
+4. The img element has an animation.
+5. The animation is named rotate.
+6. The animation is set to run for 3 seconds.
+7. The animation is set to run forwards and backwards twice.
+8. The animation is set to run with a linear timing function.
+9. The animation is set to start immediately.
+10. The animation is set to run 2 times.
+11. The animation is set to run in normal mode.
+*/
 
 header .logo img {
 	width:150;
@@ -121,7 +134,7 @@ header nav a:hover {
 }
 
 footer {
-	background:#2c3e50;
+	background-color:turquoise;
 	width: 100%;
 	padding:20px;
 	margin-bottom: 20px;
