@@ -13,7 +13,7 @@
     </head>
 
 <body class="bg-black">
-    <div class="container">
+    <div class="containerSing">
     <header>
         <div class="logo">
             <img src="../assets/images/movie.jpg" width=150 alt="">
@@ -34,32 +34,35 @@
 
     <form>
         <div class="container-fluid"> 
-        <fieldset >
-            <legend>Registro de Usuario:</legend>
-            <div class="col-md-4">
-                    <label for="fname">Nombre:</label>
-                    <input type="text" id="fnameID" name="fname"><br><br>
-            </div>
-            <div class="col-md-4">
-                <label for="lname">Apellido:</label>
-                <input type="text" id="lnameID" name="lname"><br><br>
-            </div>
-            <div class="col-md-4">
-                <div class="col">
-                     <label for="email">Email (*obligatorio):</label>
-                      <input type="email" id="emailID" name="email" required><br><br>
-                 </div>
-                 <div class="col">
-                <label for="birthday">Fecha de cumpleaños:</label>
-                <input type="date" id="birthdayID" name="birthday" required><br><br>
+        <legend>Registro de Usuario:</legend>
+            <div class="row">
+                <div class="col-md-4">
+                        <label for="fname">Nombre:</label>
+                        <input type="text" id="fnameID" name="fname"><br><br>
                 </div>
-             </div>
+                <div class="col-md-4">
+                    <label for="lname">Apellido:</label>
+                    <input type="text" id="lnameID" name="lname"><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email (*obligatorio):</label>
+                    <input type="email" id="emailID" name="email" required><br><br>
+                </div>
+                <div class="col">
+                    <label for="birthday">Fecha de cumpleaños:</label>
+                    <input type="date" id="birthdayID" name="birthday" required><br><br>
+                </div>
+            </div>
+            <div class="row">
              <hr class="mb-4">
              <div class="col-md-4">
                 <label for="username">Usuario (*obligatorio):</label>
                 <input type="text" id="usernameID" name="username" required><br><br>
             </div>
-            <div class="col-md-4">
+            </div>
+            <div class="row">
                 <div class="col">
                 <label for="password">Clave:</label>
                 <input type="password" id="passwordID" name="password" required><br><br>
@@ -70,10 +73,9 @@
                 <input type="password" id="RpasswordID" name="repeatpassword" required><br><br>
                 </div>
             </div>
-    
+            
             
             <button onclick='validateForm(this.form);' type="submit">Enviar</button>
-        </fieldset>
         </div> 
     </form>
     <br>
