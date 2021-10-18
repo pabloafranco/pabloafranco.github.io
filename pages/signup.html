@@ -33,49 +33,52 @@
     </header>
 
     <form>
-        <div class="container-fluid"> 
+        <div class="container" > 
         <legend>Registro de Usuario:</legend>
             <div class="row">
                 <div class="col-md-4">
-                        <label for="fname">Nombre:</label>
+                        <label for="fname" class="form-label">Nombre:</label>
                         <input type="text" id="fnameID" name="fname"><br><br>
                 </div>
                 <div class="col-md-4">
-                    <label for="lname">Apellido:</label>
+                    <label for="lname" class="form-label">Apellido:</label>
                     <input type="text" id="lnameID" name="lname"><br><br>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="email">Email (*obligatorio):</label>
+                    <label for="email" class="form-label">Email (*obligatorio):</label>
                     <input type="email" id="emailID" name="email" required><br><br>
                 </div>
                 <div class="col">
-                    <label for="birthday">Fecha de cumpleaños:</label>
+                    <label for="birthday" class="form-label">Fecha de cumpleaños:</label>
                     <input type="date" id="birthdayID" name="birthday" required><br><br>
                 </div>
             </div>
             <div class="row">
              <hr class="mb-4">
              <div class="col-md-4">
-                <label for="username">Usuario (*obligatorio):</label>
+                <label for="username" class="form-label">Usuario (*obligatorio):</label>
                 <input type="text" id="usernameID" name="username" required><br><br>
-            </div>
+        </div>
             </div>
             <div class="row">
                 <div class="col">
-                <label for="password">Clave:</label>
+                <label for="password" class="form-label">Clave:</label>
                 <input type="password" id="passwordID" name="password" required><br><br>
-                </div>   
+                <div class="valid-feedback">
+                    ¡Ok!
+                </div>
+            </div>   
                 <div class="col">
                 <!-- Vamos a validar con JS mientras se escribe -->
-                <label for="repeatpassword">Repetir Clave:</label>
+                <label for="repeatpassword" class="form-label">Repetir Clave:</label>
                 <input type="password" id="RpasswordID" name="repeatpassword" required><br><br>
-                </div>
+            </div>
             </div>
             
             
-            <button onclick='validateForm(this.form);' type="submit">Enviar</button>
+            <button  onclick='validateForm(this.form);' type="submit">Enviar</button>
         </div> 
     </form>
     <br>
