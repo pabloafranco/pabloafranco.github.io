@@ -233,6 +233,9 @@ button {
 }
 @media screen and (min-width: 1280px) {
 	.contenedor { background: black;
+		flex-direction: row;
+	}
+	.contenedor { background: black;
 				}
 }
 
